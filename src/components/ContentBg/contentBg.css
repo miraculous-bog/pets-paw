@@ -1,0 +1,25 @@
+.menu {
+	margin: 0 auto;
+}
+.content-background {
+	position: relative;
+	max-width: 680px;
+	height: 100%;
+	background: #FBE0DC;
+	border-radius: 20px;
+	max-width: 680px;
+	height: 840px;
+}
+.content-background-img {
+	position: absolute;
+	left: -17%;
+	top: 0;
+	width: 120%;
+	height: 120%;
+	height: auto;
+}
+@media only screen and (max-width: 768px) {
+	.content {
+		display: none;
+	}
+  }

@@ -1,0 +1,17 @@
+.functionality {
+	width: 110%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 997px) {
+	.functionality {
+		justify-content: space-between;
+		flex-direction: column;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.functionality {
+		flex-direction: column;
+	}
+  }

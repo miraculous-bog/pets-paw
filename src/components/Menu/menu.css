@@ -1,0 +1,22 @@
+.menu-title {
+	font-weight: 500;
+	font-size: 44px;
+	line-height: 58px;
+	margin-top: 85px;
+}
+.menu-greeting {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 29px;
+	color: #8C8C8C;
+	margin-top: 20px;
+}
+.functionality-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 29px;
+	margin-top: 60px;
+}
+.menu {
+	margin: 0 auto;
+}

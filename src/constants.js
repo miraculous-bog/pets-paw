@@ -1,0 +1,12 @@
+const TYPE_PART_APP_VOTING = 'voting';
+const TYPE_PART_APP_BREEDS = 'breeds';
+const TYPE_PART_APP_GALLERY = 'gallery';
+
+const API_KEY = '654f51af-4820-4a69-8840-9e6ec1007f9b';
+
+export {
+	TYPE_PART_APP_VOTING,
+	TYPE_PART_APP_BREEDS,
+	TYPE_PART_APP_GALLERY,
+	API_KEY,
+};

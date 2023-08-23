@@ -1,0 +1,38 @@
+.container {
+}
+.form{
+	width: 470px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+  .search{
+	outline: none;
+	padding: 15px 0px 15px 20px;
+	display: block;
+	width: 100%;
+	background: #FFFFFF;
+	border-radius: 20px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: #8C8C8C;
+	border: none;
+  }
+  .submit{
+	position: absolute; 
+	top: 10px; 
+	right: 12px;
+	z-index: 9;
+	outline: none;
+	border: none;
+	display: inline-block;
+	background-color: #FBE0DC;
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	cursor: pointer;
+	background-image: url('./vector-search.png');
+	background-repeat: no-repeat;
+	background-position: center;
+  }

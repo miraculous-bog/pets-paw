@@ -1,0 +1,11 @@
+.filter-breeds {
+	display: flex;
+	justify-content: space-between;
+}
+.filter-breeds .button {
+	max-width: 143px;
+}
+.breeds-content {
+	background-color: white;
+	padding: 20px;
+}
