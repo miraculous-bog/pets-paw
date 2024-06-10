@@ -1,20 +1,28 @@
+import React from 'react';
 import Button from '../../../common/Button';
-
+import Like from '../../../common/Like';
 import { Link } from 'react-router-dom';
+import styles from './itemBreed.module.css';
 
-import './itemBreed.css';
-
-const ItemBreed = ({ num, url, name }) => {
-	const classNum = `item${num} breed-img`;
-	const path = `/breeds/${name}`;
+const ItemBreed = ({ id, url, type }) => {
+	const getLinkId = `/breeds/${id}`;
 	return (
-		<div className={classNum}>
-			<img className='gallery-img' src={url} alt={name} />
-			<Link to={path}>
-				<div className='gallery-img-hover'>
-					<Button buttonText={name} isActive={false} />
-				</div>
-			</Link>
+		<div className={styles.breedImg}>
+			<img className={styles.galleryImg} src={url} alt='lorem' />
+
+			<div className={styles.galleryImgHover}>
+				{type === 'title' ? (
+					<Link to={getLinkId}>
+						<div className={styles.title}>
+							<Button buttonText='lorem' isActive={false} />
+						</div>
+					</Link>
+				) : (
+					<div className={styles.button}>
+						<Like isActive={false} id={id} />
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };

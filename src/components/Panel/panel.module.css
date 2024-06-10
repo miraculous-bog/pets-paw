@@ -1,0 +1,52 @@
+.container, .icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+
+  .back {
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-left: 10px;
+  }
+  
+  @media (min-width: 670px) { 
+	.back:first-child {
+	  display: none;
+	  }
+  }
+  @media (max-width: 670px) { 
+	.icons {
+		width: 100%;
+	  }
+	.back:first-child {
+	margin-right: auto; 
+	}
+   
+	
+	.back {
+	flex: 0 0 auto;
+	}
+  }
+  .path {
+	fill: #FF868E;
+  }
+  .back:hover .path {
+	fill: #FFFFFF;
+  }
+  .back:hover  {
+	background: #FF868E;
+  }
+  
+  @media (max-width: 670px) { 
+	.container { 
+	  flex-direction:column-reverse;
+	}
+  }

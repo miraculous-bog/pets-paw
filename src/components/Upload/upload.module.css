@@ -1,0 +1,93 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  z-index: 1000;
+  }
+  
+  .modal {
+  width: 50%;
+  height: 90vh;
+  position: absolute;
+  right: 2%;
+  } 
+  .title {
+    margin-top: 0;
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+  }
+  .content {
+    background: #F8F8F7;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	font-family: Jost;
+	text-align: center;
+	border-radius: 20px;
+  }
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .dropdown {
+	border-radius: 20px;
+	border: 2px dashed #FBE0DC;
+	background: #FFF;
+	height: 320px;
+	width: 100%;
+	margin-top: 40px;
+	background-image: url('../../img/bg_dropdown.png');
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	/* background-size: cover; */
+  }
+  .title {
+	color: #1D1D1D;
+	font-size: 36px;
+	margin-top: 40px;
+  }
+
+  .text {
+	color: #8C8C8C;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px; 
+	margin-top: 10px;
+  }
+  .highlight {
+	  color: #FF868E;
+  }
+  .dragged {
+	border: 3px dashed #FF868E; /* Змінюємо стиль рамки */
+	background-image: none; /* Видаляємо фонове зображення */
+	color: #FF868E; /* Змінюємо колір тексту */
+  }
+  .hidden {
+	  opacity: 0;
+	  height: 0;
+	  width: 0;
+	  line-height: 0;
+	  overflow: hidden;
+	  padding: 0;
+	  margin: 0;
+  }
+
+  .uploadedImg {
+	  max-width: 100%;
+	  width: 100%;
+	  max-height: 200px;
+  }

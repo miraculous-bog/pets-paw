@@ -1,0 +1,44 @@
+
+.button {
+	display: flex;
+	align-items: center;
+	padding: 12px 30px;
+	color: #ff868e;
+	text-align: center;
+	font-family: Jost;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 2px;
+	border-radius: 10px;
+	border: none;
+	background-color: #FBE0DC;
+	cursor: pointer;
+	/* transition: background-color 0.3s, color 0.3s; */
+  }
+  .button svg{
+  margin-right: 10px;
+}
+  .button:hover {
+	background-color: #ff868e;
+	color: white;
+  }
+  
+  .hovered svg {
+	fill: white;
+
+  }
+  
+  /* You might need to adjust this selector based on how you apply the 'hovered' class */
+  .button:hover svg {
+	fill: white;
+  }
+
+  @media (max-width: 670px) { 
+	.button {
+		justify-content: center;
+		margin-top: 10px;
+	}
+	
+}

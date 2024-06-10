@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import styles from './select.module.css';
+import styles from './selectOption.module.css';
 
-const Select = ({ options, onChange }) => {
+const SelectOption = ({ options, onChange }) => {
 	console.log(options.default.value);
 	const [selectedValue, setSelectedValue] = useState(options.default.value);
 
@@ -14,6 +14,7 @@ const Select = ({ options, onChange }) => {
 
 	return (
 		<div className={styles.container}>
+			<label className={styles.label}>{options.title}</label>
 			<select
 				className={styles.select}
 				value={selectedValue}
@@ -32,4 +33,4 @@ const Select = ({ options, onChange }) => {
 	);
 };
 
-export default Select;
+export default SelectOption;

@@ -1,14 +1,12 @@
 .container {
-}
-.form{
-	width: 470px;
-	display: inline-block;
-	vertical-align: top;
+	width: 100%;
 	position: relative;
+	box-sizing: content-box;
 }
   .search{
 	outline: none;
-	padding: 15px 0px 15px 20px;
+	vertical-align: top;
+	padding: 15px 15px 15px 20px;
 	display: block;
 	width: 100%;
 	background: #FFFFFF;
@@ -18,6 +16,16 @@
 	line-height: 30px;
 	color: #8C8C8C;
 	border: none;
+font-family: Jost;
+  }
+  .search:hover{
+	padding: 13px 13px 13px 18px;
+	border: 2px solid #FBE0DC;
+  }
+  .search:focus{
+	padding: 13px 13px 13px 18px;
+	border: 2px solid #FF868E;
+	color: #1D1D1D;
   }
   .submit{
 	position: absolute; 
@@ -36,3 +44,16 @@
 	background-repeat: no-repeat;
 	background-position: center;
   }
+
+  .submit:hover{
+	background-color: #FF868E;
+	background-image: url('./search.png');
+  }
+  @media (max-width: 670px) { 
+	.search{
+		margin-top: 10px;
+	}
+	.submit{
+		top: 20px; 
+	  }
+}

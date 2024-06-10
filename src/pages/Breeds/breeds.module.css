@@ -1,4 +1,4 @@
-.filter-breeds {
+/* .filter-breeds {
 	display: flex;
 	justify-content: space-between;
 }
@@ -8,4 +8,8 @@
 .breeds-content {
 	background-color: white;
 	padding: 20px;
+} */
+.btns {
+	display: flex;
+	justify-content: space-between;
 }

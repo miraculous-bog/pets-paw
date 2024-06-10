@@ -1,0 +1,103 @@
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px; /* Фіксована висота рядків для більших екранів */
+  grid-template-areas:
+    "item1 item2 item3"
+    "item1 item4 item4"
+    "item5 item4 item4"
+    "item6 item7 item8"
+    "item9 item9 item8"
+    "item9 item9 item10"
+    "item11 item12 item13"
+    "item11 item14 item14"
+    "item15 item14 item14";
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item7 {
+  grid-area: item7;
+}
+
+.item8 {
+  grid-area: item8;
+}
+
+.item9 {
+  grid-area: item9;
+}
+
+.item10 {
+  grid-area: item10;
+}
+
+.item11 {
+  grid-area: item11;
+}
+
+.item12 {
+  grid-area: item12;
+}
+
+.item13 {
+  grid-area: item13;
+}
+
+.item14 {
+  grid-area: item14;
+}
+
+.item15 {
+  grid-area: item15;
+}
+
+/* Гнучка висота рядків для мобільних пристроїв */
+@media (max-width: 670px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px; /* Фіксована висота рядків для мобільних пристроїв */
+    gap: 10px;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8"
+      "item9"
+      "item10"
+      "item11"
+      "item12"
+      "item13"
+      "item14"
+      "item15";
+  }
+}

@@ -1,7 +1,7 @@
 .menu {
 	margin: 0 auto;
 }
-.content-background {
+.background {
 	position: relative;
 	max-width: 680px;
 	height: 100%;
@@ -10,7 +10,7 @@
 	max-width: 680px;
 	height: 840px;
 }
-.content-background-img {
+.img {
 	position: absolute;
 	left: -17%;
 	top: 0;

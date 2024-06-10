@@ -2,13 +2,22 @@ import React from 'react';
 
 import styles from './input.module.css';
 
-export const Input = () => {
+import { breedsDataFilter } from '../../filterGalleryDefaultValues';
+
+export const Input = ({ value, onInputChange }) => {
+	console.log(value, onInputChange, breedsDataFilter);
+	const query = breedsDataFilter.default.query;
 	return (
 		<div className={styles.container}>
-			<form className={styles.form} action=''>
-				<input className={styles.search} type='text' name='q' />
-				<input className={styles.submit} type='submit' value='' />
-			</form>
+			<input
+				className={styles.search}
+				placeholder='Search for breeds by name'
+				type='text'
+				name='q'
+				value={value}
+				onChange={(e) => onInputChange(query, e.target.value)}
+			/>
+			<input className={styles.submit} type='submit' value='' />
 		</div>
 	);
 };
